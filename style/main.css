@@ -1,9 +1,33 @@
+.header {
+    width: 100%;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.logo {
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.center {
+    margin: auto;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.derecha {
+    float: right;
 }
 
 li {
@@ -12,12 +36,194 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: #a5842e;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 14px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    color: white;
+    text-decoration: none;
+}
+
+.reservar {
+    border: solid;
+    color: #a5842e;
+    margin-top: 8%;
+}
+
+.correo {
+    color: #a5842e;
+    margin-top: 8%;
+    margin-bottom: 0%;
+}
+
+.portadaprincipal {
+    background: url('../assets/img/bg-principal.jpg') no-repeat center center;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.tratamientos {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+}
+
+.ajustecentral {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo {
+    color: #a5842e;
+    font-size: 80px;
+}
+
+.parrafo {
+    color: white;
+    letter-spacing: 3px;
+    margin-right: 30%;
+}
+
+.titulotratamiento {
+    color: #a5842e;
+    text-align: center;
+    font-weight: bold;
+}
+
+.parrafotratamiento {
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subtitulotratamientos {
+    color: #a5842e;
+    text-align: center;
+    font-weight: bold;
+}
+
+.descripciontratamiento {
+    line-height: 25px;
+    text-align: center;
+    font-size: 120%;
+}
+
+.imagenestratamietno {
+    width: 90%;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    margin-top: 20px;
+}
+
+.animacion {
+    -webkit-transition: all 1.9s ease;
+    -moz-transition: all 1.9s ease;
+    -o-transition: all 1.9s ease;
+    -ms-transition: all 1.9s ease;
+}
+
+.animacion:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.quienessomos {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.883), rgba(0, 0, 0, 0.753)), url('../assets/img/photo-1520473378652-85d9c4aee6cf.jpg');
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.tituloquienes {
+    color: #d8c624;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.parrafoquienes {
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+.ajustequienes {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin white-gradient {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+$animationSpeed: 40s;
+// Animation
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7))
+    }
+}
+
+// Styling
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+    &::before,
+    &::after {
+        @include white-gradient;
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+    &::before {
+        left: 0;
+        top: 0;
+    }
+    .slide-track {
+        animation: scroll $animationSpeed linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }
+    .slide {
+        height: 100px;
+        width: 250px;
+    }
 }
