@@ -74,10 +74,6 @@ input {
     padding: 10px;
 }
 
-#GuardarNuevaCita {
-    display: none;
-}
-
 .Enviar {
     background-color: #a5842e;
     color: white;
