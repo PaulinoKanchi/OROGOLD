@@ -1,62 +1,46 @@
-.header {
+.Header {
     width: 100%;
-    position: relative;
     background-color: rgb(0, 0, 0);
-    z-index: 1;
 }
 
-.logo {
-    width: 20%;
+.Logo {
+    width: 40%;
     margin-top: 20px;
     margin-bottom: 20px;
     cursor: pointer;
 }
 
-.center {
-    margin: auto;
+.TextoHeader {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.derecha {
-    float: right;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #a5842e;
-    text-align: center;
-    padding: 10px 14px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    color: white;
-    text-decoration: none;
-}
-
-.reservar {
+.Reservar {
     border: solid;
     color: #a5842e;
     margin-top: 8%;
+    padding: 10px 20px;
 }
 
-.correo {
+.Correo {
     color: #a5842e;
     margin-top: 8%;
     margin-bottom: 0%;
+    margin-right: 20px;
+}
+
+.Correo:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.Reservar:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.Derecha {
+    float: right;
 }
 
 .portadaprincipal {
@@ -70,6 +54,36 @@ li a:hover:not(.active) {
     -o-background-size: cover;
 }
 
+.Formulario {
+    width: 60%;
+    height: 320px;
+    background-color: #ffffff;
+    padding: 10px 25px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.TituloFormulario {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#GuardarNuevaCita {
+    display: none;
+}
+
+.Enviar {
+    background-color: #a5842e;
+    color: white;
+    font-weight: bold;
+}
+
 .tratamientos {
     width: 100%;
     height: 600px;
@@ -81,7 +95,24 @@ li a:hover:not(.active) {
     display: flex;
 }
 
+.AjusteCentralPortada {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .AjusteCentral {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CentradoVertical {
+    display: flex;
+    align-items: center;
+}
+
+.TextoPortada {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -175,8 +206,13 @@ li a:hover:not(.active) {
     margin-right: auto;
 }
 
+.owl-dots {
+    display: none;
+}
+
 .Informacion {
-    margin-top: 20px
+    background-color: #f5f5f5;
+    margin-bottom: 60px;
 }
 
 .TituloInformacion {
@@ -202,4 +238,68 @@ li a:hover:not(.active) {
     border: solid #a5842e;
     color: #a5842e;
     text-decoration: none;
+}
+
+.UltimaSeccion {
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.Imagen {
+    width: 100%;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: -100px;
+}
+
+.TituloUltimaSeccion {
+    color: #a5842e;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ParrafoUltimaSeccion {
+    color: black;
+    text-align: justify;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.BotonReservar {
+    background-color: #a5842e;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.BotonReservar:hover {
+    text-decoration: none;
+    color: #ffffffdc;
+}
+
+.Footer {
+    height: 200px;
+    background-color: black;
+}
+
+.LogoPie {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.IconosPie {
+    width: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+
+.TextoPie {
+    color: #a5842e;
+    margin-right: 12px;
 }
